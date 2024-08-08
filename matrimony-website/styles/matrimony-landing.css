@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/background-images/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+header {
+  max-width: 100%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+header img {
+    width: 70px;
+    height: 70px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+header .site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e84393;
+  margin-left: 1rem;
+  letter-spacing: 0.1rem;
+}
+header .buttons {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+header .buttons button {
+  padding: 0.5rem 1rem;
+  border: 0.01rem solid #e84385;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #e84393;
+}
+header .buttons button:hover {
+  background-color: #e84393;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.hero p {
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  color: #e84385;
+}
+main p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+}
+main .explore-button {
+  width: fit-content;
+  margin: 1rem;
+  text-decoration: none;
+  color: #e84385;
+  border: 0.1rem solid #e84385;
+  background-color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+}
+
+main .explore-button:hover {
+  background-color: #e84385;
+  color: #fff;
+  transition: 0.4s;
+  border: 0.01rem solid #ffffff;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 1.4rem;
+  width: 100%;
+  font-size: 0.7rem;
+  position: fixed;
+  bottom: 0;
+}
+
+.rights {
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+}
+
+.rights :hover {
+  color: #e84393;
+  transition: 0.4s;
+}
